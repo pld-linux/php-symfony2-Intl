@@ -8,7 +8,7 @@ Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	ba9335048f0b3fbe7625e58771bd6bdc
+# Source0-md5:	ad30fce432b246619c096eeef44ad2bc
 URL:		http://symfony.com/doc/current/components/intl.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
