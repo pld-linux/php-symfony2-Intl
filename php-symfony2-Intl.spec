@@ -17,8 +17,7 @@ BuildRequires:	rpmbuild(macros) >= 1.674
 Requires:	php(core) >= %{php_min_version}
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
-# Icu not available via PEAR channel, only in git: https://github.com/symfony/Icu
-#Requires:	php-symfony2-Icu
+Requires:	php-symfony2-Icu >= 1.0
 Suggests:	php(intl)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
