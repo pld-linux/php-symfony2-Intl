@@ -3,18 +3,22 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	ad30fce432b246619c096eeef44ad2bc
-URL:		http://symfony.com/doc/current/components/intl.html
+# Source0-md5:	650a7e4b119e035900b66837a796bf29
+URL:		http://symfony.com/doc/2.4/components/intl.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.674
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
+Requires:	php(pcre)
+Requires:	php(simplexml)
+Requires:	php(spl)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-Icu >= 1.0
