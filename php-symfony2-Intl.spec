@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
-Version:	2.4.3
+Version:	2.4.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	650a7e4b119e035900b66837a796bf29
+# Source0-md5:	f72b77e4f7166108d8eab27f16cc89f9
 URL:		http://symfony.com/doc/2.4/components/intl.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
