@@ -1,15 +1,15 @@
-%define		pearname	Intl
-%define		php_min_version 5.3.3
+%define		package	Intl
+%define		php_min_version 5.3.9
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
-Version:	2.4.8
+Version:	2.7.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
-# Source0-md5:	cee0e1e9ace6b9651c6d940ab6988a03
-URL:		http://symfony.com/doc/2.4/components/intl.html
+Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
+# Source0-md5:	6fd61e29f036b84fabc5a73b45061edf
+URL:		http://symfony.com/doc/2.7/components/intl.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.674
@@ -19,7 +19,6 @@ Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
 Requires:	php-pear >= 4:1.3.10
-Requires:	php-symfony2-Icu >= 1.0
 Suggests:	php(intl)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,18 +31,18 @@ The replacement layer is limited to the locale "en". If you want to
 use other locales, you should install the intl extension instead.
 
 %prep
-%setup -q -n %{pearname}-%{version}
+%setup -q -n %{package}-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
+cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
+rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Tests
 # dev tools for Intl package maintainer
-rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}/Resources/bin
+rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Resources/bin
 
 %clean
 rm -rf $RPM_BUILD_ROOT
