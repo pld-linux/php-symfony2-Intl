@@ -5,12 +5,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	6fd61e29f036b84fabc5a73b45061edf
+# Source0-md5:	aad22b547dbc7257dfb786b27377fff0
 URL:		http://symfony.com/doc/2.7/components/intl.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -33,7 +33,7 @@ The replacement layer is limited to the locale "en". If you want to
 use other locales, you should install the intl extension instead.
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n intl-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
