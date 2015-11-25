@@ -13,14 +13,12 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	27a7582032e030fc408ae00a3038dcd5
 URL:		http://symfony.com/doc/2.7/components/intl.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.674
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(date)
 Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
-Requires:	php-pear >= 4:1.3.10
 Suggests:	php(intl)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
