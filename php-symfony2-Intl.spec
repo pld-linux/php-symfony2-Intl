@@ -19,6 +19,7 @@ Requires:	php(date)
 Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
+Requires:	php-dirs >= 1.6
 Suggests:	php(intl)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
