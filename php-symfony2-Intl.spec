@@ -5,12 +5,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	27a7582032e030fc408ae00a3038dcd5
+# Source0-md5:	a098f3ec190d24b5be90c4e5f7a24a0a
 URL:		http://symfony.com/doc/2.7/components/intl.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.674
