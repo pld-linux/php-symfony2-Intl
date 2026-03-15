@@ -5,7 +5,7 @@
 Summary:	Symfony2 Intl Component
 Name:		php-symfony2-Intl
 Version:	2.7.8
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
